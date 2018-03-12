@@ -13,7 +13,7 @@ public class BrDecode {
 	static {
 		try {
 			decode.Dictionary.kBrotliDictionary = bsToIs(
-					FileUtil.read(BrDecode.class.getResourceAsStream("/dictionary.txt")));
+					FileUtil.read(BrDecode.class.getResourceAsStream("dictionary.txt")));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
